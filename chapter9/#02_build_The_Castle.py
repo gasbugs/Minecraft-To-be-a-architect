@@ -1,6 +1,6 @@
 from mcpi.minecraft import Minecraft
 from villageConstruction import pos
-from villageConstruction import building
+from villageConstruction import castle
 
 
 mc = Minecraft.create()
@@ -8,5 +8,10 @@ mc = Minecraft.create()
 # 블럭의 x,y,z 좌표를 알아오세요!
 x, y, z = pos.getPos(mc)
 
-bd = building.building()
-bd.build(mc, x, y, z, 3)
+cb = castle.castle()
+
+ver = 50
+hor = 50
+
+cb.build(mc, x, y-1, z, ver, hor)
+
