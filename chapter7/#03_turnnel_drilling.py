@@ -27,8 +27,8 @@ while (True):
     #1
     time.sleep(1)
     mc.setBlocks(x,y,z, x+height, y+height, z+height, blocks.AIR)
-    mc.setBlock(x, y, z+height/2, blocks.TOURCH)
-    mc.setBlock(x + height / 2, y, z + height / 2, blocks.TOURCH)
+    mc.setBlock(x, y, z+height/2, blocks.TORCH)
+    mc.setBlock(x + height / 2, y, z + height / 2, blocks.TORCH)
     x += height
     y -= 1
 
